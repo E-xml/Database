@@ -16,6 +16,8 @@
             string getPath();
             //Setter
             void setPath(string p);
+            //Features
+            bool isExist();
 
         private:
             string path;

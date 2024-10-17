@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "database.hpp"
 
 using namespace std;
@@ -17,4 +18,9 @@ string Database::getPath()
 void Database::setPath(string p)
 {
     this->path = p;
+}
+
+bool Database::isExist()
+{
+    istream fi(this->path);
 }
