@@ -1,1 +1,7 @@
-if %DEBUG% == "": @echo off
+@echo off
+
+g++ *.cpp -o prog.exe
+
+./prog.exe
+
+pause
