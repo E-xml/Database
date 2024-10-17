@@ -2,6 +2,6 @@
 
 g++ *.cpp -o prog.exe
 
-./prog.exe
+prog.exe
 
 pause
