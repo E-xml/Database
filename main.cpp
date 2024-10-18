@@ -7,9 +7,9 @@ using namespace std;
 int main()
 {
 	Database d{"Hi"};
+  cout << d.isExist() << endl;
 	cout << d.getPath() << endl;
 	d.setPath("Hello");
 	cout << d.getPath() << endl;
-	cout << d.isExist() << endl;
 	return 0;
 }

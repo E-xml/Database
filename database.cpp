@@ -8,6 +8,15 @@ using namespace std;
 Database::Database(string p)
 {
     this->path = CheckExtension(p, "dat");
+    if (this->isExist())
+    {
+        cout << "Database already exists" << endl;
+    }
+    else
+    {
+        ofstream file(this->path);
+        file.close();
+    }
 
     cout << "Targeted database locked" << endl;
 }
@@ -20,6 +29,15 @@ string Database::getPath()
 void Database::setPath(string p)
 {
     this->path = CheckExtension(p, "dat");
+    if (this->isExist())
+    {
+        cout << "Database already exists" << endl;
+    }
+    else
+    {
+        ofstream file(this->path);
+        file.close();
+    }
 }
 
 bool Database::isExist()
