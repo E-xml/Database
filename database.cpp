@@ -24,12 +24,11 @@ void Database::setPath(string p)
 
 bool Database::isExist()
 {   
-    ofstream fo(this->path);
-    return fo.good();
+    ifstream fi(this->path);
+    return fi.good();
 }
 
-//Just some internal methods
-string CheckExtension(string file, string extension)
+string Database::CheckExtension(string file, string extension)
 {
     if(file.length() > extension.length()+1 and file.substr(file.length()-(extension.length()+1)) == "." + extension)
     {

@@ -16,11 +16,14 @@
             string getPath();
             //Setter
             void setPath(string p);
-            //Features
+            //Publics Features
             bool isExist();
 
         private:
+            //Attributes
             string path;
+            //Privates features
+            string CheckExtension(string file, string extension);
     };
 
 #endif
