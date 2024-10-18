@@ -18,6 +18,8 @@
             void setPath(string p);
             //Publics Features
             bool isExist();
+            void BrutWriteAll(string text);
+            string BrutReadAll();
 
         private:
             //Attributes
